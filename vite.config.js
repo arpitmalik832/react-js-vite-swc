@@ -2,12 +2,12 @@
  * This is the Vite configuration file.
  * @file This file is saved as `vite.config.js`.
  */
-import { defineConfig, mergeConfig } from "vite";
+import { defineConfig, mergeConfig } from 'vite';
 
-import commonConfig from "./build_utils/vite/configs/vite.common.mjs";
-import buildStatsConfig from "./build_utils/vite/configs/vite.buildStats.mjs";
-import visualizerConfig from "./build_utils/vite/configs/vite.visualizer.mjs";
-import { ERR_NO_APP_ENV_FLAG } from "./build_utils/config/logs.mjs";
+import commonConfig from './build_utils/vite/configs/vite.common.mjs';
+import buildStatsConfig from './build_utils/vite/configs/vite.buildStats.mjs';
+import visualizerConfig from './build_utils/vite/configs/vite.visualizer.mjs';
+import { ERR_NO_APP_ENV_FLAG } from './build_utils/config/logs.mjs';
 
 /**
  * Get additional Vite configurations based on command line arguments.
@@ -17,8 +17,8 @@ import { ERR_NO_APP_ENV_FLAG } from "./build_utils/config/logs.mjs";
  * const addons = getAddons();
  */
 function getAddons() {
-  const addVisualizer = process.env.INCLUDE_VISUALIZER === "true";
-  const addBuildStats = process.env.INCLUDE_BUILD_STATS === "true";
+  const addVisualizer = process.env.INCLUDE_VISUALIZER === 'true';
+  const addBuildStats = process.env.INCLUDE_BUILD_STATS === 'true';
 
   const configs = [];
   if (addVisualizer) configs.push(visualizerConfig);

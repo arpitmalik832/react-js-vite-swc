@@ -5,18 +5,18 @@
 const config = {
   prettier: true,
   svgo: true,
-  exportType: "named",
+  exportType: 'named',
   svgoConfig: {
     plugins: [
       {
-        name: "removeViewBox",
+        name: 'removeViewBox',
         active: false,
       },
     ],
   },
   titleProp: true,
   ref: true,
-  outputDir: "dist/assets",
+  outputDir: 'dist/assets',
   icon: false,
 };
 

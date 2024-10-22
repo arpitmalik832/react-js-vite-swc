@@ -2,10 +2,10 @@
  * This file contains the bootstrap logic for mounting the React application.
  * @file This file is saved as `src/bootstrap.jsx`.
  */
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
-// import AppProvider from './providers/AppProvider';
+import AppProvider from './providers/AppProvider';
 
 /**
  * Mounts the React application to the provided DOM element.
@@ -16,28 +16,13 @@ import { createRoot } from "react-dom/client";
  * // To unmount the application
  * unmount();
  */
-// function mount(ele) {
-//   const root = createRoot(ele);
-
-//   root.render(
-//     <StrictMode>
-//       <AppProvider />
-//     </StrictMode>,
-//   );
-
-//   return () => queueMicrotask(() => root.unmount());
-// }
-
-// export { mount };
-
 function mount(ele) {
   const root = createRoot(ele);
 
   root.render(
     <StrictMode>
-      {/* <AppProvider /> */}
-      <div>App</div>
-    </StrictMode>
+      <AppProvider />
+    </StrictMode>,
   );
 
   return () => queueMicrotask(() => root.unmount());
