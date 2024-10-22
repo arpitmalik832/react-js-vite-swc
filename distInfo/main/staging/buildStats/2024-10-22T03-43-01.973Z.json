@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "fileName": "0.0.0/js/vendor-react.9AmEBXRE.js",
+      "size": 10595,
+      "gzippedSize": 3284,
+      "brotliSize": 2859,
+      "contentType": "chunk",
+      "percentageBySize": "4.89"
+    },
+    {
+      "fileName": "0.0.0/js/vendor-react-dom.Dfr7RczE.js",
+      "size": 195366,
+      "gzippedSize": 49159,
+      "brotliSize": 41619,
+      "contentType": "chunk",
+      "percentageBySize": "90.21"
+    },
+    {
+      "fileName": "0.0.0/js/vendor-scheduler.K__oi9SH.js",
+      "size": 6583,
+      "gzippedSize": 2159,
+      "brotliSize": 1834,
+      "contentType": "chunk",
+      "percentageBySize": "3.04"
+    },
+    {
+      "fileName": "0.0.0/js/main.BhBAkFRe.js",
+      "size": 3494,
+      "gzippedSize": 1330,
+      "brotliSize": 1142,
+      "contentType": "chunk",
+      "percentageBySize": "1.61"
+    },
+    {
+      "fileName": "0.0.0/js/bootstrap.DsldTOdi.js",
+      "size": 539,
+      "gzippedSize": 325,
+      "brotliSize": 283,
+      "contentType": "chunk",
+      "percentageBySize": "0.25"
+    }
+  ],
+  "totalSize": 216577,
+  "totalGzippedSize": 56257,
+  "totalBrotliSize": 47737,
+  "buildDuration": 421,
+  "noOfFiles": 5,
+  "largestFile": {
+    "fileName": "0.0.0/js/vendor-react-dom.Dfr7RczE.js",
+    "size": 195366,
+    "gzippedSize": 49159,
+    "brotliSize": 41619,
+    "contentType": "chunk",
+    "percentageBySize": "90.21"
+  }
+}
