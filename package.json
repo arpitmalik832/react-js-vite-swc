@@ -5,6 +5,15 @@
   "type": "module",
   "author": "Arpit Malik",
   "license": "MIT",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arpitmalik832/react-js-vite-swc"
+  },
+  "engines": {
+    "node": ">=20.17.0",
+    "yarn": ">=1.22.22"
+  },
   "scripts": {
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install dependencies')\"",
     "rm-dist": "rimraf dist --glob",
