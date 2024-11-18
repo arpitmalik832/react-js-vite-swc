@@ -196,7 +196,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "knip": "^5.34.0",
     "lint-staged": "^15.2.10",
-    "postcss-preset-env": "^10.0.7",
+    "postcss-preset-env": "^10.1.1",
     "prettier": "^3.3.3",
     "release-it": "^17.10.0",
     "rimraf": "^6.0.1",
