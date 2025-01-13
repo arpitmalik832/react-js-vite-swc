@@ -21,11 +21,13 @@ function generateChunkManifestPlugin() {
     name: 'generate-chunk-manifest',
     writeBundle(options, bundle) {
       const manifest = {};
-      for (const [fileName, chunk] of Object.entries(bundle)) {
+
+      Object.entries(bundle).forEach(([fileName, chunk]) => {
         if (chunk.isEntry || chunk.isDynamicEntry) {
           manifest[fileName] = chunk.imports || [];
         }
-      }
+      });
+
       writeFileSync(
         process.env.IS_STORYBOOK === 'true'
           ? storybookChunkManifestPath
