@@ -33,7 +33,6 @@ const config = {
     '!src/routes/**',
     '!src/stories/**',
   ],
-  globals: {},
   // https://facebook.github.io/jest/docs/en/configuration.html#coveragedirectory-string
   coverageDirectory: '<rootDir>/coverage', // [string]
   coveragePathIgnorePatterns: ['node_modules'],
@@ -87,11 +86,8 @@ const config = {
     url: 'http://localhost:3000/',
   },
   transform: {
-    '\\.(js|jsx)$': '@swc/jest',
+    '\\.(js|jsx)$': 'babel-jest',
   },
-  transformIgnorePatterns: [
-    '<rootDir>/node_modules/(?!(@arpitmalik832/react-js-rollup-monorepo-library)/)', // Add your ESM packages here
-  ],
   // unmockedModulePathPatterns: // [array<string>]
   verbose: true, // [boolean],
   setupFiles: ['<rootDir>/jest.setup.js'], // [testConfig files DOM,Mock]

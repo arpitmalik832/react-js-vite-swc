@@ -4,7 +4,7 @@
  */
 describe('app', () => {
   beforeEach(() => {
-    cy.visit('https://react-js-vite.netlify.app');
+    cy.visit('https://react-js-webpack.netlify.app');
   });
 
   it('display header along with the button', () => {
