@@ -1,3 +1,7 @@
+/**
+ * This file is used to configure storybook.
+ * @file This file is saved as '.storybook/main.js'.
+ */
 import { mergeConfig } from 'vite';
 
 import { ENVS } from '../build_utils/config/index.mjs';
